@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio | Manoela Neves</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+  <!-- Navegação -->
+  <header>
+    <div>
+        <img src="img/logo.png" alt="" class="logo">
+    </div>
+    <nav>
+      <ul class="menu">
+        <li><a href="#home">home</a></li>
+        <li><a href="#about">sobre</a></li>
+        <li><a href="#services">aprendizado</a></li>
+        <li><a href="#skills">minhas skills</a></li>
+        <li><a href="#work">meus trabalhos</a></li>
+        <li><a href="#contact">entre em contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HOME -->
+  <section id="home" class="home">
+    <div class="home-text">
+      <h1>Hello Word, meu nome é
+        <span>Manoela Neves</span>
+      </h1>
+      <p>e sou programadora Back-End</p>
+      <div class="buttons">
+       <a href="curriculo.pdf" class="btn primary" download>Download CV</a>
+        <a href="#contact" class="btn outline">Let's talk</a>
+      </div>
+      <img src="img/sentada.png" alt="Avatar Manoela" class="avatar" />
+    </div>
+
+    <div class="contact-home">
+  <h3>Fale <span>comigo</span></h3>
+  <form class="home-form">
+    <input type="text" placeholder="Seu nome" required>
+    <input type="email" placeholder="Seu e-mail" required>
+    <textarea placeholder="Sua mensagem" rows="3" required></textarea>
+    <button type="submit" class="btn-send">
+      <i class="fas fa-paper-plane"></i> Enviar
+    </button>
+  </form>
+</div>
+
+  </section>
+
+  
+
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <h2>Sobre <span>Mim</span></h2>
+    <div class="about-content">
+      <p>
+        Apaixonada por desenvolvimento <span class="highlight">Back-End</span> e por resolver problemas através da lógica e da tecnologia, busco criar sistemas eficientes, seguros e bem estruturados.
+        Tenho facilidade em <span class="highlight">analisar e otimizar fluxos de dados</span>, desenvolver <span class="highlight">APIs escaláveis</span> e integrar aplicações que conectam o front-end ao servidor de forma fluida.
+        Valorizo boas práticas de código e colaboração entre equipes, pois acredito que um software de qualidade nasce do equilíbrio entre <span class="highlight">estrutura técnica e comunicação eficaz</span>. 
+        Estou sempre em busca de <span class="highlight">novos desafios</span>, aprendendo novas linguagens e explorando diferentes arquiteturas para entregar soluções sólidas e inteligentes.
+      </p>
+      <img src="img/parada.png" alt="Avatar Manoela 2" class="avatar2" />
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="services">
+    <h2>O quê estou <span>aprendendo?</span></h2>
+    <div class="cards">
+        <div class="card">
+             <div>
+                <img src="img/apis.png" alt="" class="apis">
+             </div>
+                <h3>Desenvolvimento de APIs e Integrações</h3>
+                <ul>
+                <li>Criação de APIs REST eficientes e seguras</li>
+                <li>Integração entre front-end e back-end</li>
+                <li>Conexão com bancos de dados</li>
+                <li>Autenticação e controle de acesso</li>
+                </ul>
+        </div>
+
+      <div class="card">
+            <div>
+                <img src="img/otimizaçãoeperformace.png" alt="" class="apis-otimização">
+             </div>
+        <h3>Otimização e Performance</h3>
+        <ul>
+          <li>Análise de performance de servidores e bancos</li>
+          <li>Implementação de cache e compressão</li>
+          <li>Refatoração de código</li>
+          <li>Monitoramento de APIs</li>
+        </ul>
+      </div>
+
+      <div class="card">
+             <div>
+                <img src="img/tecnical.png" alt="" class="apis">
+             </div>
+        <h3>Manutenção e Suporte Técnico</h3>
+        <ul>
+          <li>Correção de bugs e atualizações</li>
+          <li>Suporte técnico e acompanhamento</li>
+          <li>Monitoramento de logs e erros</li>
+          <li>Deploy automatizado com Git/GitHub</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="skills">
+    <h2>Minhas <span>Skills</span></h2>
+    <div class="skills-box">
+      <div class="skills-card">
+        <h3 class="h3soft">Soft-Skills</h3>
+        <ul class="">
+          <li>Comunicação e trabalho em equipe – Facilidade para colaborar e compartilhar ideias.</li>
+          <li>Proatividade– Iniciativa para solucionar problemas e otimizar processos.</li>
+          <li>Organização e Foco – Planejamento e priorização de tarefas.</li>
+          <li>Aprendizado contínuo – Busca constante por novas tecnologias e aprimoramento.</li>
+          <li>Resiliência e adaptação – Lidar bem com desafios e ambientes em mudança.</li>
+        </ul>
+      </div>
+
+      <div class="skills-card">
+        <h3 class="h3hard">Hard-Skills</h3>
+        <ul>
+          <li>Node.js, Express.js– Criação de APIs REST e gerenciamento de rotas.</li>
+          <li>Python (Flask / Django)– Desenvolvimento de aplicações server-side e automações.</li>
+          <li>Banco de Dados: MySQL, PostgreSQL, MongoDB– Modelagem, consultas e integração.</li>
+          <li>Autenticação e Segurança – JWT, controle de acesso e criptografia.</li>
+          <li>Versionamento com Git e GitHub – Fluxos de branches, commits e colaboração.</li>
+          <li>Arquitetura de Sistemas – Organização de pastas, camadas e boas práticas de código..</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section id="work" class="work">
+    <h2>My <span>Work</span></h2>
+    <div class="grid">
+      <div class="work-item"></div>
+      <div class="work-item"></div>
+      <div class="work-item"></div>
+      <div class="work-item"></div>
+      <div class="work-item"></div>
+      <div class="work-item"></div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+  <div class="contact-container">
+    <div class="contact-text">
+      <h2>Vamos conversar <br> sobre algo <span>incrível</span> juntos?</h2>
+      <p>Estou interessada em colaborar em projetos criativos e desafiadores.</p>
+
+      <h4>Tenho interesse em:</h4>
+      <div class="tags">
+        <button>APIs & Back-End</button>
+        <button>Integrações</button>
+        <button>Portfólios</button>
+        <button>Automação</button>
+        <button>Aplicações Web</button>
+      </div>
+
+      <div class="socials">
+        <a href="https://github.com/manoelanevess" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+         <a href="https://www.instagram.com/manoelanvs/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+         <a href="https://www.linkedin.com/in/manoela-das-neves-a83097362/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://wa.me/5553984688768?text=Oi%20Manoela!%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar." 
+   target="_blank" 
+   aria-label="WhatsApp">
+   <i class="fab fa-whatsapp"></i>
+</a>
+      </div>
+    </div>
+
+   <form action="https://formsubmit.co/manoela.nevesr@gmail.com" method="POST">
+      <input type="text" placeholder="Seu nome" required />
+      <input type="email" placeholder="Seu email" required />
+      <textarea placeholder="Sua mensagem" rows="5" required></textarea>
+      <button type="submit" class="btn-send">
+        <i class="fas fa-paper-plane"></i> Enviar
+      </button>
+    </form>
+  </div>
+</section>
+
+
+  <!-- FOOTER -->
+  <footer id="contact">
+    <p>© 2025 - Feito por Manoela Neves</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
