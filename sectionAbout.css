@@ -1,0 +1,78 @@
+/* ABOUT */
+.about {
+  padding: 12px 80px;
+  background: radial-gradient(circle at 15% 35%, #A855F7 -20%, transparent 25%),
+    radial-gradient(circle at 80% 50%, #A855F7 -20%, transparent 25%),
+    var(--bg);
+}
+
+.about h2 {
+  font-size: 2.2rem;
+  margin-top: 250px;
+  padding-left: 30px;
+}
+
+.about h2 span {
+  color: var(--orange);
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.about p {
+  line-height: 1.9;
+  max-width: 800px;
+  padding-left: 30px;
+  margin-bottom: 250px;
+}
+
+.highlight {
+  color: var(--orange);
+}
+
+.avatar2 {
+  position:relative;
+  bottom: 135px; /* 👈 controla o quanto sobe ou desce */
+  left: 100px;
+  width: 340px;  /* 👈 ajusta o tamanho */
+  z-index: 2;
+}
+
+/* Tablets (até 1024px) */
+@media (max-width: 1200px) {
+    .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .avatar2 {
+    display: none;
+  }
+}
+
+/* Celulares (até 768px) */
+@media (max-width: 700px) {
+  .about {
+    padding: 0px 20px;
+  }
+
+  .about h2 {
+    margin-top: 0px;
+    margin-left: 70px;
+  }
+
+  .about p {
+    max-width: 100%;
+    text-align:justify;
+    line-height: 1.5;
+    padding-left: 0px;
+    margin-bottom: 100px;
+  }
+
+  .avatar2 {
+    display: none;
+  }
+}
