@@ -31,12 +31,19 @@ document.querySelectorAll(".card").forEach(card => {
   observer.observe(card);
 });
 
-const form = document.querySelector(".home-form");
+// Seleciona ambos os formulários, se existirem
+const forms = document.querySelectorAll(".home-form, .contact-form");
 
-form.addEventListener("submit", function(e) {
-  e.preventDefault();
-  showMessage("✅ Mensagem enviada com sucesso!");
-  form.reset();
+forms.forEach(form => {
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    showMessage("✅ Mensagem enviada com sucesso!");
+
+    setTimeout(() => {
+      form.submit(); // envia pro FormSubmit normalmente
+    }, 1000);
+  });
 });
 
 function showMessage(text) {
@@ -44,7 +51,8 @@ function showMessage(text) {
   msg.classList.add("alert");
   msg.textContent = text;
   document.body.appendChild(msg);
-
   setTimeout(() => msg.remove(), 3000);
 }
+
+
 

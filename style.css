@@ -430,6 +430,7 @@ nav {
   flex-wrap: wrap;
   gap: 10px;
   margin-bottom: 40px;
+  margin-top: 20px;
 }
 
 .tags button {
@@ -472,8 +473,8 @@ nav {
 .contact-form input,
 .contact-form textarea {
   background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  color: var(--light);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 20px rgba(107, 44, 245, 0.15);
   padding: 12px;
   border-radius: 10px;
   font-size: 1rem;
@@ -485,6 +486,7 @@ nav {
 .contact-form textarea:focus {
   border-color: var(--orange);
   outline: none;
+  color: var(--light);
 }
 
 .btn-send {
