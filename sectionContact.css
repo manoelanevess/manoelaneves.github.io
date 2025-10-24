@@ -152,6 +152,9 @@
   100% { opacity: 0; transform: translateY(20px); }
 }
 
+
+
+
 /* Tablets (até 1024px) */
 @media (max-width: 1200px) {
 
