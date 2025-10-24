@@ -30,3 +30,21 @@ document.querySelectorAll(".card").forEach(card => {
   card.classList.add("hidden");
   observer.observe(card);
 });
+
+const form = document.querySelector(".home-form");
+
+form.addEventListener("submit", function(e) {
+  e.preventDefault();
+  showMessage("✅ Mensagem enviada com sucesso!");
+  form.reset();
+});
+
+function showMessage(text) {
+  const msg = document.createElement("div");
+  msg.classList.add("alert");
+  msg.textContent = text;
+  document.body.appendChild(msg);
+
+  setTimeout(() => msg.remove(), 3000);
+}
+

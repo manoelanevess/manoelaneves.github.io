@@ -522,6 +522,27 @@ nav {
   text-shadow: 0 0 10px rgba(249, 115, 22, 0.4);
 }
 
+.alert {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: rgba(249, 115, 22, 0.9);
+  color: white;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  box-shadow: 0 0 15px rgba(249, 115, 22, 0.4);
+  animation: fadeInOut 3s ease forwards;
+  z-index: 999;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translateY(20px); }
+  15% { opacity: 1; transform: translateY(0); }
+  85% { opacity: 1; }
+  100% { opacity: 0; transform: translateY(20px); }
+}
+
 /* FOOTER */
 footer {
   text-align: center;
