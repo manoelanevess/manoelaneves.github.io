@@ -1,0 +1,206 @@
+/* HOME */
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100vh;
+  padding: 100px 150px;
+  background: radial-gradient(circle at 25% 50%, #A855F7 -5%, transparent 35%),
+    radial-gradient(circle at 90% 70%, #A855F7 -10%, transparent 30%),  radial-gradient(circle at 100% 5%, #A855F7 -10%, transparent 10%)
+    var(--bg);
+  
+  position: relative; 
+}
+
+
+.home h1 {
+  font-size: 2.0rem;
+}
+
+.home h1 span {
+  color: var(--orange);
+  font-size: 4.0rem;
+  display: block;
+}
+
+.home .buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 50px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn.primary {
+  background: var(--orange);
+  color: white;
+}
+
+.btn.outline {
+  border: 2px solid var(--orange);
+  color: var(--orange);
+  background: transparent;
+}
+
+.avatar {
+  position: absolute;
+  bottom: 340px; 
+  right: 825px; 
+  width: 100px;  
+  z-index: 2;
+}
+
+
+@keyframes float {
+  0%,100% {transform: translateY(0);}
+  50% {transform: translateY(-12px);}
+}
+
+/* ===== FORMULÁRIO NA HOME ===== */
+.contact-home {
+  position: absolute;
+  top: 50%;
+  right: 150px;
+  transform: translateY(-50%);
+  width: 520px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 25px;
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 20px rgba(107, 44, 245, 0.15);
+  animation: fadeIn 1.5s ease;
+}
+
+.contact-home h3 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: var(--light);
+}
+
+.contact-home span {
+  color: var(--orange);
+}
+
+.home-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.home-form input,
+.home-form textarea {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--light);
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  resize: none;
+  transition: 0.3s;
+}
+
+.home-form input:focus,
+.home-form textarea:focus {
+  border-color: var(--orange);
+  outline: none;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.btn-send {
+  background: var(--orange);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-send:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(249, 115, 22, 0.3);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-60%) scale(0.95); }
+  to { opacity: 1; transform: translateY(-50%) scale(1); }
+}
+
+/* Tablets (até 1024px) */
+@media (max-width: 1200px) {
+    .home {
+    flex-direction: column;
+    padding: 80px 40px;
+    text-align: center;
+  }
+
+  .avatar {
+   display: none;
+  }
+
+  .contact-home {
+    position: static;
+    transform: none;
+    width: 100%;
+    margin-top: 40px;
+  }
+}
+
+/* Celulares (até 768px) */
+@media (max-width: 700px) {
+  .home {
+    padding: 60px 25px;
+    justify-content: center;
+  }
+
+  .home h1 {
+    font-size: 1.6rem;
+  }
+
+  .home h1 span {
+    font-size: 2.6rem;
+  }
+
+  .contact-home {
+    padding: 20px;
+    box-shadow: none;
+  }
+
+  .avatar {
+    display: none;
+  }
+}
+
+/* Telas muito pequenas (até 480px) */
+@media (max-width: 480px) {
+  .home h1 {
+    font-size: 1.3rem;
+  }
+
+  .home h1 span {
+    font-size: 2rem;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .contact-home {
+    padding: 15px;
+  }
+}
