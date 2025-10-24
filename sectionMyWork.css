@@ -1,0 +1,25 @@
+/* WORK */
+.work {
+  padding: 120px 80px;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.work-item {
+  height: 180px;
+  border-radius: 15px;
+  background: linear-gradient(145deg, #1c2035, #31114d);
+  transition: 0.3s;
+}
+
+.work-item:hover {
+  transform: scale(1.05);
+}
+
+
