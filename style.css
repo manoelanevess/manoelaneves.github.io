@@ -545,6 +545,196 @@ nav {
   100% { opacity: 0; transform: translateY(20px); }
 }
 
+/* ============ RESPONSIVIDADE ============ */
+
+/* Tablets (até 1024px) */
+@media (max-width: 1024px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav {
+    margin-top: 10px;
+    padding: 0;
+  }
+
+  .menu {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .home {
+    flex-direction: column;
+    padding: 80px 40px;
+    text-align: center;
+  }
+
+  .avatar {
+    position: static;
+    width: 150px;
+    margin: 30px auto 0;
+  }
+
+  .contact-home {
+    position: static;
+    transform: none;
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .avatar2 {
+    position: static;
+    width: 260px;
+    margin-top: 30px;
+  }
+
+  .cards {
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .skills-card {
+    width: 90%;
+  }
+
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  .contact-text {
+    text-align: center;
+  }
+}
+
+/* Celulares (até 768px) */
+@media (max-width: 768px) {
+  body {
+    font-size: 0.95rem;
+  }
+
+  header {
+    padding: 15px;
+  }
+
+  .logo {
+    height: 40px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .home {
+    padding: 60px 25px;
+  }
+
+  .home h1 {
+    font-size: 1.6rem;
+  }
+
+  .home h1 span {
+    font-size: 2.6rem;
+  }
+
+  .contact-home {
+    padding: 20px;
+    box-shadow: none;
+  }
+
+  .about {
+    padding: 60px 20px;
+  }
+
+  .about p {
+    max-width: 100%;
+  }
+
+  .services {
+    padding: 60px 20px;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .skills {
+    padding: 60px 20px;
+  }
+
+  .skills-card {
+    width: 100%;
+  }
+
+  .contact {
+    padding: 60px 20px;
+  }
+
+  .tags {
+    justify-content: center;
+  }
+
+  .socials {
+    justify-content: center;
+  }
+
+  footer {
+    font-size: 0.8rem;
+  }
+}
+
+/* Telas muito pequenas (até 480px) */
+@media (max-width: 480px) {
+  .home h1 {
+    font-size: 1.3rem;
+  }
+
+  .home h1 span {
+    font-size: 2rem;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .contact-home {
+    padding: 15px;
+  }
+
+  .card, .skills-card {
+    padding: 20px;
+  }
+
+  .contact-text h2 {
+    font-size: 1.6rem;
+  }
+}
+
+
 /* FOOTER */
 footer {
   text-align: center;
